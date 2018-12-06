@@ -9,18 +9,21 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="json/dados.json"></script>
 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<script>
 		//Documento Pronto
 		$(document). ready(function(){
-
+						
 		    		 for(i=0; i<4; i++) {
-		    			$("menu").append('<li><a href="'+menu[i].link+'">'+menu[i].desc+'</a><li>'); 
-					
-					 }	
-		//	$("header"). click(function(){
-		//	$("#principal") .prepend('<p>Funcionou</p>');
-			});	
+		    			$("menu").append('<li><a href="'+menu[i].link+'">'+menu[i].desc+'</a><li>);}	
+						$("header"). click(function(){
+						
+					});	
 		
 	</script>
 
@@ -30,8 +33,9 @@
 				$("ul li").attr("class", "normal");
 				$(this).attr("class", "selecionado");
 			});
+
  			//criar o menu
- 			for (i=0; i <10; i++) {
+ 			for (i=0; i <4; i++) {
  				 $("#menu").append('<li><a href="#"> </a></li>');
 				 		}
 			
@@ -41,30 +45,72 @@
 </head>
 
 <body>
-	<header>
+  <header>
 
 		<nav>
 		    <ul id="menu">
 
 		        <li class="selecionado"><a href="#">Inicio</a></li>
 				
-				<li><a href="#">História</a></li>					
+				<li><a href="#">História1</a></li>					
 				<li><a href="#">Cronograma</a></li>
 				<li><a href="#">Apoiadores</a></li>
 				<li><a href="#">Contato</a></li>
 
 			</ul>		
 		</nav>
-
-	</header>
+  </header>
 
 
 	<main>
 
 	<img src="imagens/BCHawkFp.png"> 
     	
-		<div id="principal">
-				<img src="acervo/1938/32_452_1938SADSC_jp_min.jpg" alt=" Foto de Camboriú - atual Balneário Camboriú - Gerada em 1938 pela Força Área dos Estados Unidos - Acervo da Secretaria de Administração do Estado de Santa Catarina - Departamento de Topografia " >
+		<div class="container">
+		  <h2>Balneário Camboriú - SC - Brasil</h2>
+		  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+		    <!-- Indicators -->
+		    <ol class="carousel-indicators">
+		      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		      <li data-target="#myCarousel" data-slide-to="1"></li>
+		      <li data-target="#myCarousel" data-slide-to="2"></li>
+		    </ol>
+
+		    <!-- Wrapper for slides -->
+		 
+		    <div class="carousel-inner">
+
+		      <div class="item active">
+		      	<img src="acervo/1938/32_452_1938SADSC_jp_min.jpg" class="rounded" alt=" Foto de Camboriú - atual Balneário Camboriú - Gerada em 1938 pela Força Área dos Estados Unidos - Acervo da Secretaria de Administração do Estado de Santa Catarina - Departamento de Topografia " style="width:100%;">
+		        <div class="carousel-caption">
+		          <h3>Balneário Camboriú</h3>
+		          <p>Praia Central - 1938</p>
+		        </div>
+		      </div>
+
+
+		      <div class="item">
+		        
+		        <img src="acervo/1938/32_453_1938SADSC_jp_min.jpg" class="rounded" alt=" Foto de Camboriú - atual Balneário Camboriú - Gerada em 1938 pela Força Área dos Estados Unidos - Acervo da Secretaria de Administração do Estado de Santa Catarina - Departamento de Topografia " style="width:100%;">
+		        <div class="carousel-caption">
+		      
+		          <h3>Balneário Camboriú</h3>
+		          <p>Praia Central -  Praia do Buraco 1938</p>
+		        </div>
+		   
+		      </div>
+		      </div>
+
+		    <!-- Left and right controls -->
+		    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		      <span class="glyphicon glyphicon-chevron-left"></span>
+		      <span class="sr-only">Previous</span>
+		    </a>
+		    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+		      <span class="glyphicon glyphicon-chevron-right"></span>
+		      <span class="sr-only">Next</span>
+		    </a>
+		  </div>
 		</div>
 
 		<h1></h1>	
@@ -74,7 +120,13 @@
 	</main>
 
 	<footer>
-		<p> atualizado em 25 de novembro de 2018 </p>
+		
+		<hr>
+
+		<p> atualizado em 06 de dezembro de 2018 </p>
+
+		<hr>
+
 	</footer>
 
 </body>
