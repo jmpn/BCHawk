@@ -18,10 +18,9 @@
 				//requisição pedindo para o servidor - pegue o Json
 				// DADOS é a resposta da minha requisição
 				$.getJSON (url, function (dados){
-				//dados é um arrey de arrey - ele chama uma Url externa
-				
-				
-				console.log(dados);
+					//dados é um arrey de arrey - ele chama uma Url externa
+					
+					console.log(dados);
 
 					for (i=0; i<dados.length; i++){
 						$("#menu").append('<li><a href="'+dados[i].link+'">'+dados[i].titulo+'</a></li>')
@@ -30,24 +29,12 @@
 			});
 
 			//posso apagar após teste
-			window.alert('funcionou');
+			//window.alert('funcionou');
 						
 					});	
 	</script>
 
-	<script type="text/javascript">
-//		$(document).ready(function(){
-//			$("ul li").click(function(){
-//				$("ul li").attr("class", "normal");
-//				$(this).attr("class", "selecionado");
-			});
-
- 			//criar o menu
- //			for (i=0; i <4; i++) {
- //				 $("#menu").append('<li><a href="#"> </a></li>');
-				 		}
-		});
-	</script>
+	
 
 </head>
 
@@ -56,15 +43,15 @@
 
 		<nav>
 		    <ul id="menu">
-<!--
+<!-- 
 		        <li class="selecionado"><a href="#">Inicio</a></li>
 				
 				<li><a href="#">História1</a></li>					
 				<li><a href="#">Cronograma</a></li>
 				<li><a href="#">Apoiadores</a></li>
 				<li><a href="#">Contato</a></li>
-				<li><a href="avaliacao.html">Avaliação</a></li>
--->
+				<li><a href="Avaliacao.html">Avaliação</a></li>
+ -->
 			</ul>		
 		</nav>
   </header>
@@ -72,21 +59,81 @@
 
 	<main>
 
-	<img src="imagens/BCHawkFp.png"  class="rounded" > 
-    	
-		<div id="principal">
-				<img src="acervo/1938/32_452_1938SADSC_jp_min.jpg" alt=" Foto de Camboriú - atual Balneário Camboriú - Gerada em 1938 pela Força Área dos Estados Unidos - Acervo da Secretaria de Administração do Estado de Santa Catarina - Departamento de Topografia " >
-		</div>
 
-		<h1></h1>	
 
-		<p></p>
+		<h2>Questão 04</h2>
 
+
+			<div >
+				
+				<div id="botoes">
+
+				<button id="bt01"accordion">Botão 01</button>
+		
+				<button id="bt02"window.allert">Botão 02</button>
+				
+				<button id="bt03" ">Botão 03</button>
+
+				<button id="bt04" ">Botão 04</button>
+
+				</div>
+
+				
+
+
+				<div id="textos"></div>
+				<p id="p1">Parágrafo 01</p>
+				<p id="p2">Parágrafo 02</p>
+				<p id="p3">Parágrafo 03</p>
+				<p id="p4">Parágrafo 04</p>
+				<p id="p5">Parágrafo 05</p>
+				
+
+
+			
+			</div>
+
+			<script>
+				$("#bt01").click(function(){
+					$("#p1").toggle("slow");
+				})
+			</script>
+
+			<script>
+				$("#bt01").click(function(){
+					$("#p2").css("color","pink");
+				})
+			</script>
+		
+			<script>
+				$("#bt02").click(function(){
+					 alert($('#p2').text());
+
+				})
+			</script>
+
+
+			<script>
+				$("#bt03").click(function(){
+					 $('#textos').prepend("<h3>'Será que deu'<h3/>");
+
+				})
+			</script>
+
+			<script>
+				$("#bt04").click(function(){
+					 $('#p1').append("Insere no primeiro parágrafo");
+
+				})
+			</script>
 	</main>
+
+
+
 
 	<footer>
 
-		<p> atualizado em 03 de novembro de 2018 </p>
+		<p> atualizado em 03 de dezembro de 2018 </p>
 
 		
 	</footer>
